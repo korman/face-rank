@@ -1,24 +1,30 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "face-rank",
+  "productName": "Face Rank",
   "version": "0.1.0",
   "identifier": "com.hubri.face-rank",
   "build": {
-    "beforeDevCommand": "yarn dev",
+    "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "yarn build",
+    "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "face-rank",
-        "width": 800,
-        "height": 600
+        "title": "Face Rank",
+        "width": 1180,
+        "height": 760,
+        "minWidth": 720,
+        "minHeight": 560
       }
     ],
     "security": {
-      "csp": null
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": []
+      }
     }
   },
   "bundle": {

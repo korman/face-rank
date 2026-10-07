@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 # Added by code-review-graph
 .code-review-graph/
+
+# Local photo collections and test images
+/resources/
